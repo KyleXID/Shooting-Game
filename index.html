@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+ <title>Game</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--게임 배경-->
+<canvas id="canvasBg" width="800" height="600"></canvas>
+
+<div id="overlapping">
+  <!--게임 캐릭터나 총알-->
+  <canvas id="canvasEntities" width="800" height="600"></canvas>
+
+  <p class="game-over">GAME OVER!</p>
+  <p class="you-win">YOU WIN!</p>
+
+  <div class="score-container">
+    <p id="timer"></p>
+  </div>
+</div>
+
+<script src="js/setting.js"></script>
+<script src="js/player.js" charset="UTF-8"></script>
+<script src="js/bullet.js" charset="UTF-8"></script>
+<script src="js/enemy.js"></script>
+<script src="js/game.js"></script>
+<script src="js/score.js"></script>
+</body>
+</html>

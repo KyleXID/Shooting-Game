@@ -1,0 +1,70 @@
+body {
+  background: #202020;
+}
+
+canvas {
+  display: block;
+}
+
+#canvasBg {
+    margin: 0 auto;
+  background: #ffffff;
+}
+
+#overlapping {
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+
+  position: relative;
+}
+
+#overlapping canvas {
+  margin: -600px auto 0;
+}
+
+#timer {
+  /* width: 100px; */
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  margin: 0 20px;
+
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.dim {
+  background-color: #202020;
+  opacity: 0.5;
+}
+
+.game-over, .you-win {
+  position: absolute;
+  top: 150px;
+
+  display: none;
+  font-size: 100px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.game-over {
+  left: 100px;
+  color: red;
+}
+
+.you-win {
+  left: 200px;
+  color: blue;
+}
+
+.over .game-over {
+  display: block;
+}
+
+.win .you-win {
+  display: block;
+}
